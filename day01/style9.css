@@ -1,0 +1,94 @@
+    /* css 初始化代码 css reset */
+    /* 清除元素默认的内外边距 */
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* 清除列表样式 */
+    
+    li {
+        list-style: none;
+    }
+    /* 去掉button默认自带的边框 */
+    
+    button {
+        border: none;
+    }
+    
+    body {
+        background-color: #f3f5f7;
+    }
+    /* 版心 1200 水平居中 */
+    
+    .w {
+        width: 1200px;
+        margin: auto;
+    }
+    /* header start */
+    
+    .header {
+        height: 42px;
+        /* background-color: pink; */
+        margin: 30px auto;
+    }
+    
+    .logo {
+        float: left;
+        margin-right: 60px;
+    }
+    
+    .nav {
+        float: left;
+    }
+    
+    .nav ul li {
+        float: left;
+    }
+    
+    .nav ul li a {
+        display: block;
+        height: 42px;
+        padding: 0 10px;
+        margin-right: 60px;
+        line-height: 40px;
+        font-size: 18px;
+        color: #050505;
+        text-decoration: none;
+    }
+    
+    .nav ul li a:hover {
+        border-bottom: 2px solid #00a4ff;
+    }
+    
+    .search {
+        float: left;
+        margin-left: 70px;
+    }
+    
+    .search input {
+        float: left;
+        width: 340px;
+        height: 40px;
+        border: 1px solid #00a4ff;
+        border-radius: 0;
+        padding-left: 20px;
+        color: #ccc;
+    }
+    
+    .search button {
+        width: 50px;
+        height: 42px;
+        background: url(/images/fdj.png) no-repeat;
+        background-size: contain;
+    }
+    
+    .user {
+        float: left;
+        height: 42px;
+        line-height: 42px;
+        margin-left: 30px;
+        font-size: 14px;
+        color: #666;
+        border-radius: 50%;
+    }

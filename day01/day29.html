@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标签显示模式</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            /* 背景颜色 不要和 文字的颜色混淆了 color */
+            background-color: pink;
+        }
+        /* 行内元素 直接设置高宽 是无效的 只显示文本和其他行内元素 */
+        
+        span {
+            width: 200px;
+            height: 200px;
+            /* 背景颜色 */
+            background-color: pink;
+        }
+        /* 行内块元素  */
+        
+        img {
+            width: 200px;
+            height: 200px;
+            /* 背景颜色 */
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div>我是div,一行独占上</div>
+    <div>我是div,一行独占上</div>
+    <div>我是div,一行独占上</div>
+    <div>
+        <strong>文字</strong>
+        <h1>标题</h1>
+    </div>
+    <!-- 块级元素 p里面不能包含 div 段落 p h dt里面尽量不要放块级元素 -->
+    <p>
+        <div>Hello Word</div>
+    </p>
+    <span>看我是span，我愿意一行</span>
+    <span>看我是span，我愿意一行</span>
+    <span>看我是span，我愿意一行</span>
+    <!-- 行内元素 a（链接里面不能在放链接） span 属于行内元素 -->
+    <span>我是行内元素</span>
+    <span>我是行内元素</span>
+    <span>我是行内元素</span>
+    <span>
+        <strong>哈喽</strong>
+    </span>
+    <!-- 行内块元素  -->
+    <img src="curve.png" alt="">
+    <img src="curve.png" alt="">
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动</title>
+    <!-- 清除浮动的本质：清除浮动主要为了解决父级元素因为子级浮动引起内部高度为0的问题。
+        清除浮动之后，父级就会根据浮动的子盒子自动检测高度。父级有了高度，就不会影响下面的标准流了 -->
+    <!-- clear 清除浮动 -->
+    <style>
+        /* 声明清除浮动的样式*/
+        /* 父级双伪样式 清除浮动法*/
+        
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+        
+        .clearfix:after {
+            clear: both;
+        }
+        
+        .clearfix {
+            *zoom: 1;
+        }
+        /* 使用父级after伪元素清除浮动 (after清除法)*/
+        /* .after 方式为空元素额外标签法的升级版，好处是不同单独加标签了 */
+        /* .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+        } */
+        /* .clearfix {
+            *zoom: 1;
+            ie6,7 专门清除浮动的样式
+    }*/
+        
+        .one {
+            width: 500px;
+            /* height: 200px; */
+            /* background-color: pink; */
+            border: 1px solid red;
+            /* 给父级添加 overflow 就可以清除浮动 (父级添加overflow属性f方法)*/
+            /* overflow: hidden; */
+        }
+        
+        .damao {
+            float: left;
+            width: 400px;
+            height: 400px;
+            background-color: purple;
+        }
+        
+        .ermao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        
+        .two {
+            width: 600px;
+            height: 150px;
+            background-color: black;
+        }
+        /* 清除浮动 （额外标签法）*/
+        /* .clear {
+            clear: both;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="one clearfix">
+        <div class="damao"></div>
+        <div class="ermao"></div>
+        <!-- <div class="clear"></div> -->
+    </div>
+    <div class="two"></div>
+
+</body>
+
+</html>

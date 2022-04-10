@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>权重的优先性</title>
+    <style>
+        /* 出现了权重叠加的现象 */
+        /* .nav a 权重 0,0,1,0 + 0，0，0，1.= 0,0,1,1*/
+        
+        .nav a {
+            color: red;
+        }
+        /* .first 权重 0,0,1,0 */
+        /* .first {
+            color: pink;
+        } */
+        /* 权重 0,0,2,0 */
+        
+        .nav .first {
+            color: pink;
+        }
+        /* 0,0,0,5 +0,0,0,5 =0,0,0,10 */
+        
+        div {
+            color: red;
+        }
+        
+        p {
+            color: green;
+        }
+        /* 因为demo 没有选择P标签，所以 继承的权重为 0 */
+        
+        .demo {
+            color: blue;
+        }
+        
+        #test {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo" id="test">
+        <p>人生四大悲</p>
+    </div>
+    <div class="nav">
+        <a href="#" class="first">家里没宽带</a>
+        <a href="#">网速不够快</a>
+        <a href="#">手机没流量</a>
+        <a href="#">学校无wifi</a>
+    </div>
+</body>
+
+</html>

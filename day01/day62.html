@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动口诀之特</title>
+    <style>
+        /* 浮动元素默认之间没有缝隙 和真正的行内块是有区别的 */
+        
+        .noe,
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        
+        .noe {
+            float: left;
+        }
+        
+        .two {
+            background-color: purple;
+            float: left;
+        }
+        
+        .three {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="noe"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+
+</html>

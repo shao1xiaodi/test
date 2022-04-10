@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子边框（border）</title>
+    <style>
+        div {
+            width: 200px;
+            height: 400px;
+            /* 上边框写法 */
+            border-top: 2px solid red;
+            border-left: 1px solid green;
+            border-right: 1px solid blue;
+            border-bottom: 1px solid orange;
+            /* 让我们的表格 单元格 th 合并相邻的边框 */
+            border-collapse: collapse;
+        }
+        
+        input {
+            /* border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: none; */
+            /* 四个边框都去掉  先写大的 后写小的*/
+            border: none;
+            border-bottom: 1px solid red;
+            /* 让我们的表格 单元格 th 合并相邻的边框 */
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    用户名：<input type="text"> 密码：
+    <input type="text">
+</body>
+
+</html>

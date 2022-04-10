@@ -1,0 +1,388 @@
+/* 设置整个网页默认的背景颜色 */
+
+body {
+    background-color: #f3f6f8;
+}
+
+
+/* ------------------------------------ study-header的样式 */
+
+.study-header {
+    height: 100px;
+    /* background-color: pink; */
+    padding-top: 30px;
+    /* 自动内减 */
+    box-sizing: border-box;
+}
+
+.study-header .logo {
+    width: 195px;
+    height: 42px;
+    /* background-color: skyblue; */
+}
+
+.study-header .logo a {
+    display: block;
+    width: 195px;
+    height: 42px;
+    background: url(/images/logo.png);
+    /* 淘宝的隐藏logo文字的做法 */
+    text-indent: -999999px;
+    overflow: hidden;
+}
+
+.study-header .nav {
+    margin-left: 70px;
+}
+
+.study-header .nav li {
+    float: left;
+    height: 42px;
+    padding: 0 8px;
+    margin-right: 27px;
+    /* 自动内减 */
+    box-sizing: border-box;
+    line-height: 42px;
+}
+
+.study-header .nav li:hover {
+    border-bottom: 2px solid #00a4f9;
+}
+
+.study-header .nav li a {
+    font-size: 18px;
+    color: #000;
+}
+
+.study-header .search {
+    width: 411px;
+    height: 40px;
+    background-color: orange;
+    /* 95-8-27 */
+    margin-left: 60px;
+}
+
+.study-header .search input {
+    float: left;
+    width: 362px;
+    height: 40px;
+    /* input:search有默认的自动内减，不需要设置 */
+    border: 1px solid #04a4ff;
+    padding-left: 18px;
+    /* 去除轮廓线 */
+    outline: none;
+}
+
+.study-header .search button {
+    float: left;
+    width: 49px;
+    height: 40px;
+    /* 去除默认边框 */
+    border: none;
+    background: url(/images/btn.png);
+}
+
+.study-header .user {
+    height: 40px;
+    margin-left: 30px;
+    line-height: 40px;
+}
+
+.study-header .user img {
+    /* 垂直对齐方式 */
+    vertical-align: middle;
+}
+
+
+/* ----------------------------------------study-entry的样式 */
+
+.study-entry {
+    height: 420px;
+    background: #1b046b url(/images/banner2.png) no-repeat center center;
+}
+
+.study-entry .container {
+    height: 420px;
+    /* ps */
+    /* background-color: pink; */
+}
+
+.study-entry .container .aside {
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, .4);
+    padding-top: 14px;
+    /* 自动内减 */
+    box-sizing: border-box;
+}
+
+.study-entry .container .aside li {
+    height: 44px;
+    padding: 0 20px;
+    line-height: 44px;
+}
+
+.study-entry .container .aside li a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.study-entry .container .aside li span {
+    float: right;
+    font-family: 楷体;
+    color: #fff;
+    font-size: 12px;
+}
+
+.study-entry .container .aside li:hover a,
+.study-entry .container .aside li:hover span {
+    color: #00bcfd;
+}
+
+.study-entry .container .study {
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.study-entry .container .study h3 {
+    height: 48px;
+    background-color: #9acfea;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.study-entry .container .study ul {
+    padding: 10px 18px 0;
+}
+
+.study-entry .container .study ul li {
+    height: 61px;
+    /* 自动内减 */
+    box-sizing: border-box;
+    border-bottom: 1px solid #ececec;
+    padding-top: 13px;
+}
+
+.study-entry .container .study ul li p:nth-child(1) {
+    font-size: 16px;
+    color: #6f6f6f;
+}
+
+.study-entry .container .study ul li p:nth-child(2) {
+    font-size: 12px;
+    color: #9f9f9f;
+}
+
+.study-entry .container .study a {
+    display: block;
+    width: 200px;
+    height: 40px;
+    /* ps */
+    /* background-color: pink; */
+    margin: 0 auto;
+    margin-top: 7px;
+    border: 1px solid #03a4fc;
+    /* 自动内减 */
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 38px;
+    color: #03a4fc;
+}
+
+.study-entry .container .study a:hover {
+    background-color: #03a4fc;
+    color: #fff;
+}
+
+
+/* ------------------------------------study-recommend部分样式 */
+
+.study-recommend {
+    height: 60px;
+    background-color: #fff;
+    margin-top: 8px;
+    line-height: 60px;
+}
+
+.study-recommend h3 {
+    margin: 0 34px;
+    font-size: 16px;
+    color: #009dff;
+}
+
+.study-recommend ul li {
+    float: left;
+    color: #bfbfbf;
+}
+
+.study-recommend ul li a {
+    margin: 0 34px;
+    color: #000;
+}
+
+.study-recommend .hobby {
+    float: right;
+    margin-right: 25px;
+    font-size: 12px;
+    color: #009dff;
+}
+
+.study-main {
+    height: 598px;
+    /* ps */
+    /* background-color: pink; */
+    margin-top: 35px;
+}
+
+.study-main .main-title {
+    height: 42px;
+    /* background-color: orange; */
+}
+
+.study-main .main-title h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.study-main .main-title a {
+    margin-top: 10px;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #9da0a0;
+}
+
+.study-main .main-content {
+    height: 556px;
+    /* ps */
+    /* background-color: skyblue; */
+}
+
+.study-main .main-content .item {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.study-main .main-content .item .hot {
+    /* 子绝父相 */
+    position: absolute;
+    top: 4px;
+    right: -4px;
+}
+
+.study-main .main-content .item .pic {
+    display: block;
+    width: 100%;
+}
+
+.study-main .main-content .item h4 {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 20px 20px 0 23px;
+}
+
+.study-main .main-content .item p {
+    padding-left: 23px;
+    padding-top: 15px;
+    font-size: 12px;
+    color: #959595;
+}
+
+.study-main .main-content .item p span {
+    color: #f9772c;
+}
+
+.study-main .main-content .item:nth-child(5n) {
+    margin-right: 0;
+}
+
+.study-main .main-content .item:nth-child(n=+6) {
+    margin-bottom: 0;
+}
+
+
+/* -----------------------------------------study-footer部分样式 */
+
+.study-footer {
+    height: 417px;
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.study-footer .container {
+    height: 417px;
+    /* ps */
+    /* background-color: pink; */
+    padding-top: 30px;
+    /* 自动内减 */
+    box-sizing: border-box;
+}
+
+.study-footer .container .copyright {
+    width: 644px;
+    height: 150px;
+    /* ps */
+    /* background-color: skyblue; */
+    margin-left: 20px;
+}
+
+.study-footer .container .copyright img {
+    display: block;
+    margin-bottom: 22px;
+}
+
+.study-footer .container .copyright p {
+    line-height: 18px;
+    font-size: 12px;
+    color: #5d5d5d;
+}
+
+.study-footer .container .copyright a {
+    display: block;
+    width: 120px;
+    height: 36px;
+    /* ps */
+    /* background-color: pink; */
+    /* 自动内减 */
+    box-sizing: border-box;
+    border: 1px solid #03a5ff;
+    margin-top: 12px;
+    text-align: center;
+    line-height: 34px;
+    color: #03a5ff;
+}
+
+.study-footer .container .copyright a:hover {
+    background-color: #03a5ff;
+    color: #fff;
+}
+
+.study-footer .container dl:nth-child(2) {
+    width: 223px;
+}
+
+.study-footer .container dl:nth-child(3) {
+    width: 218px;
+}
+
+.study-footer .container dl:nth-child(4) {
+    width: 94px;
+}
+
+.study-footer .container dl dt {
+    font-size: 16px;
+    height: 30px;
+}
+
+.study-footer .container dl dd {
+    font-size: 12px;
+    height: 22px;
+}

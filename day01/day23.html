@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子元素选择器</title>
+    <style>
+        /* 后代选择器 选择 孙子后代 div strong {
+            color: red;
+        } */
+        /* 子元素选择器 符号 > 只选亲儿子 这些元素 */
+        
+        div>strong {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <strong>儿子</strong>
+        <strong>儿子</strong>
+        <strong>儿子</strong>
+    </div>
+    <div>
+        <strong>孙子</strong>
+        <strong>孙子</strong>
+        <strong>孙子</strong>
+    </div>
+</body>
+
+</html>

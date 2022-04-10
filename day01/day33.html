@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css背景演示</title>
+    <style>
+        .bg {
+            width: 2000px;
+            height: 1100px;
+            /* 背景颜色 */
+            background-color: pink;
+            /* 背景图片 注意 1.必须加url 2.url地址不加 引号 “” */
+            background-image: url(curve.png);
+            /* 默认的平铺图 */
+            /* background-repeat: repeat; */
+            /* 背景图片不平铺 */
+            background-repeat: no-repeat;
+            /* 横向平铺 repeat-x */
+            /* background-repeat: repeat-x; */
+            /* 纵向平铺 repeat-y */
+            /* background-repeat: repeat-y; */
+            /* 背景位置 */
+            /* background-position: x坐标 y坐标; */
+            /* background-position: right top;右上角 */
+            /* background-position: left bottom;左下角 */
+            /* background-position: center center;水平居中 */
+            /* 则两个值前后顺序无关 因为是方位名词 */
+            /* background-position: left center;水平靠左垂直居中 */
+            /* 如果只指定了一个方位名词 另外一个默认居中对齐 */
+            /* background-position: top; */
+            /* 那么第一个 肯定是 x 是50 第二的一定是y 是10 */
+            /* background-position: 50px 10px; */
+            /* 以下说明 x10像素 y 垂直居中 */
+            /* background-position: 10px center; */
+            background-position: center 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        123122112121212121
+    </div>
+</body>
+
+</html>

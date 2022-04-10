@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title并集选择器</title>
+        <style>
+            /* 客户需求： p,span和red里的颜色都是红色 */
+            /* 分开写的 */
+            /* p {
+                color: red;
+            }
+            
+            span {
+                color: red;
+            } */
+            /*并集选择器 用 逗号隔开 ， 逗号理解为 和的意思 通常用于集体声明 
+            就是因为这些选择器 里面的样式 相同*/
+            
+            p,
+            span,
+            .red {
+                color: red;
+            }
+            /* .red {
+                color: red;
+            } */
+        </style>
+
+</head>
+
+<body>
+    <P>我和你</P>
+    <P>我和你</P>
+    <P>我和你</P>
+    <span>我和她</span>
+    <span>我和她</span>
+    <span>我和她</span>
+    <div class="red">我和您</div>
+    <div>我和您</div>
+    <h1>你和我</h1>
+    <h1>你和我</h1>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS布局的三种机制</title>
+    <style>
+        div {
+            height: 100px;
+            background-color: pink;
+            margin-top: 10px;
+        }
+        
+        .one {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            float: left;
+        }
+        
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            float: right;
+        }
+        
+        span {
+            text-align: center;
+            /* 行内元素转换成行内块元素 */
+            display: inline-block;
+            width: 200px;
+            border: 1px solid#000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one"> 123</div>
+    <div class="two"> abc</div>
+    <span>行内元素</span>
+    <span>行内元素</span>
+    <span>行内元素</span>
+    <span>行内元素</span>
+    <span>行内元素</span>
+    <span>行内元素</span>
+    <span>行内元素</span>
+</body>
+
+</html>

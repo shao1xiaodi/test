@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子绝父相的原理</title>
+    <!-- 子绝父相——子级是绝对定位，父级要用相对定位。 -->
+    <!-- 子绝父相是使用绝对定位的口诀，要牢牢记住！ -->
+    <style>
+            .father {
+            position: relative;
+            width: 1000px;
+            height: 90px;
+            background-color: pink;
+        }
+        
+        .down {
+            width: 1000px;
+            height: 150px;
+            background-color: #000;
+        }
+        
+        .arr-l {
+            position: absolute;
+            top: 72px;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            background-color: skyblue;
+        }
+        
+        .arr-r {
+            position: absolute;
+            top: 72px;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background-color: skyblue;
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <img src="/yjt.png" alt="">
+        <div class="arr-l"></div>
+        <div class="arr-r"></div>
+    </div>
+    <div class="down"></div>
+</body>
+
+</html>
