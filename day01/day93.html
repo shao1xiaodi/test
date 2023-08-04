@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3结构伪类选择器</title>
+    <style>
+        /*伪元素选择器：
+            选择符  |       简介
+        ：：before  |   在元素内部的前面插入内容
+        ：：after   |   在元素内部的后面插入内容 
+         */
+        /* div :nth-child(1) {
+            background-color: orange;
+        } */
+        /* div span:nth-child(1) {
+            background-color: pink;
+        } 这个是选不到的*/
+        
+        div span:nth-child(2) {
+            background-color: green;
+        }
+        /* 总结：nth-child(n) 选择 父元素里面的 第N个孩子，它不管里面的孩子是否是同一种类型 */
+        /* of- type 指定类型的元素*/
+        
+        div span:first-of-type {
+            background-color: blue;
+        }
+        
+        div span:last-of-type {
+            background-color: skyblue;
+        }
+        
+        div span:nth-of-type(2) {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>我是一个P</p>
+        <span>我是span</span>
+        <span>我是span</span>
+        <span>我是span</span>
+    </div>
+    <!-- ul 里面我们只允许放li 所以 nth-child和nth-of-type 就一样了 -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+</body>
+
+</html>

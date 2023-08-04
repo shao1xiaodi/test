@@ -5,14 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>H5新增语义化标签</title>
     <style>
-
+        header,
+        nav,
+        article,
+        section,
+        aside,
+        footer {
+            /* 在IE9上需要把元素转换成块级元素 */
+            display: block;
+            width: 100%;
+            height: 120px;
+            background-color: pink;
+            margin: 10px;
+        }
     </style>
 </head>
 
 <body>
-
+    <header>header头部标签</header>
+    <nav>nav导航标签</nav>
+    <article>article内容标签</article>
+    <section>section块级标签</section>
+    <aside>aside侧边栏标签</aside>
+    <footer>footer尾部标签</footer>
+    <!-- 谷歌浏览器把autoplay 属性给禁用了 -->
+    <!-- 因为不同浏览器支持不同格式，我们采用的解决方案是 为音频准备多个格式 -->
+    <!--<audio controls="controls"> 
+        <source src="#" type="audio/mpeg"> 
+        <source src="#" type="audio/ogg">
+        </audio> 您的浏览器太low了 不支持audio播放-->
+    <audio src="#" controls="controls" autoplay="autoplay" loop="loop">audio音频标签</audio>
+    <!-- 谷歌游览器把autoplay自动播放给禁用了 有解决方案：给视频添加静音属性muted 给视频循环播放 loop 加载等待的画面图片 poster -->
+    <!-- <video autoplay="autoplay" muted="muted" loop="loop" poster="图片">
+        <source>
+            <source src="#" type="video/ogg">
+            <source src="#" type="video/mp4">
+            您的游览器暂不支持video标签.播放视频    
+    </video> -->
+    <video src="#" controls="controls">video视频标签</video>
 </body>
 
 </html>

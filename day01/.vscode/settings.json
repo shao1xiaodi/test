@@ -8,5 +8,6 @@
         "sanmao",
         "taobao",
         "videocam"
-    ]
+    ],
+    "platformio-ide.useBuiltinPython": true
 }

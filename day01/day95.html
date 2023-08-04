@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 2D转换概述</title>
+    <style>
+        /* 2D转换之移动 translate
+        2D移动是2D转换里面的一种功能，可以改变元素在页面中的位置，类似定位。
+         */
+        /* 移动盒子的位置： 定位  盒子的外边距 2D转换移动 */
+        /* 1.语法
+         transform:translate（x，y）；或者分开写  
+         transform:translateX（n）；
+         transform:translateY（n）； 
+        */
+        /* 2.重点
+            ·定义2D转换中的移动，沿着X和Y轴移动元素
+            ·translate最大的优点：不会影响到其他元素的位置
+            ·translate中的百分比单位是相对于自身元素的translate（50%，50%）；
+            ·对行内标签没有效果
+         */
+        
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* x就是x轴上移动位置 y就是y轴上移动位置 中间用逗号分隔 */
+            /* transform: translate(x, y); */
+            /* transform: translate(100px, 100px); */
+            /* 1. 如果我们只移动x坐标 */
+            /* transform: translate(100px, 0); */
+            /* transform: translateX(100px); */
+            /* 2. 如果我们只移动y坐标 */
+            /* transform: translate(0, 100px); */
+            /* transform: translateY(100px); */
+        }
+        
+        div:first-child {
+            transform: translate(30px, 30px);
+        }
+        
+        div:last-child {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div>2</div>
+</body>
+
+</html>

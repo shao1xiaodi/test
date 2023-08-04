@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 2D转换案例</title>
+    <style>
+        div {
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            border: 1px solid pink;
+            margin: 10px;
+            float: left;
+        }
+        
+        div::before {
+            content: "hello";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: orange;
+            transform: rotate(180deg);
+            /* 中心点在左下角对齐 */
+            transform-origin: left bottom;
+            /* 过渡写到本身上，谁做动画给谁加 */
+            transition: all 0.4s;
+        }
+        /* 鼠标经过div 里面的 before 复原 */
+        
+        div:hover::before {
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

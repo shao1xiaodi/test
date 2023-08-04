@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3结构伪类选择器</title>
+    <style>
+        /* 匹配父元素中的第一个元素E */
+        
+        ul li:first-child {
+            background-color: pink;
+        }
+        /* 匹配父元素中最后一个E元素 */
+        
+        ul li:last-child {
+            background-color: green;
+        }
+        /* 匹配父元素中的第N个子元素E */
+        /* nth-child（n）
+        ·n可以是数字、关键字和公式
+        ·n如果是数字，就是选择第几个
+        ·常见的关键词有even偶数odd 奇数
+        ·常见的公式如下（如果n是公式，则从0开始计算）
+        ·但是第0个元素或者超出了元素的个数会被忽略） */
+        /* 公式 |取值
+         2n    |  偶数
+         2n+1  |  奇数
+         5n    |  5 10  15  ..
+         n+5   |  从第5个开始（包含第五个）到最后
+         -n+5  |  前5个（包含第5个和5的前面的全部）… 
+         */
+        
+        ul li:nth-child(8) {
+            background-color: blue;
+        }
+        /* 指定类型E的第一个 */
+        
+        ul li:first-of-type {
+            background-color: orange;
+        }
+        /* 指定类型E的最后一个 */
+        
+        ul li:last-of-type {
+            background-color: aqua;
+        }
+        /* 指定类型E的第N个 */
+        
+        ul li:nth-of-type(4) {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+</body>
+
+</html>
